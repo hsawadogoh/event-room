@@ -1,5 +1,7 @@
 {
   "name": "EventRoom",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
