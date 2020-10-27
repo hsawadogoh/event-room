@@ -1,3 +1,34 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content" type="overlay">
+    <img src="../assets/event.png" alt="" class="img"/>
+
+    <ion-content fullscreen="true">
+      <ion-list>
+        <ion-item>
+          <ion-icon style="color: #4a1b60;" name="person-circle" slot="start" size="large"></ion-icon>
+          <ion-label>
+            <h2 style="color: #4a1b60; font-weight: bold;">Mon profil</h2>
+          </ion-label>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-icon style="color: #4a1b60;" name="mail" slot="start" size="large"></ion-icon>
+          <ion-label>
+            <h2 style="color: #4a1b60; font-weight: bold;">Boîte de reception</h2>
+          </ion-label>
+        </ion-item>
+
+
+        <ion-item>
+          <ion-icon style="color: #4a1b60;" name="cart" slot="start" size="large"></ion-icon>
+          <ion-label>
+            <h2 style="color: #4a1b60; font-weight: bold;">Mon Pannier</h2>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>
