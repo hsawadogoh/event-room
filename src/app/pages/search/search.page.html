@@ -8,7 +8,16 @@
                 size="large"
                 style="margin-left: 5px;"></ion-icon>
 
-      <ion-searchbar placeholder="Rechercher un évènement..." style="margin-bottom: 5px;"></ion-searchbar>
+      <!--<ion-searchbar placeholder="Rechercher un évènement..." style="margin-bottom: 5px;"></ion-searchbar>-->
+
+      <ion-input placeholder="Rechercher un évènement..." [(ngModel)]="key"></ion-input>
+
+      <ion-icon name="close"
+                slot="end"
+                color="light"
+                (click)="onClear()"
+                size="large"
+                style="margin-left: 5px;"></ion-icon>
 
 
     </ion-buttons>
