@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>Catégories</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item (click)="onShowDetail('Danse', 'photo-3.jpeg')">
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/photo-3.jpeg" alt="">
+      </ion-thumbnail>
+
+      <ion-label class="title">
+        Danse
+      </ion-label>
+
+      <ion-icon slot="end" name="arrow-forward-outline" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="onShowDetail('Detente', 'photo-4.jpg')">
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/photo-4.jpg" alt="">
+      </ion-thumbnail>
+
+      <ion-label class="title">
+        Detente
+      </ion-label>
+
+      <ion-icon slot="end" name="arrow-forward-outline" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="onShowDetail('Visite touristique', 'photo-11.png')">
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/photo-11.png" alt="">
+      </ion-thumbnail>
+
+      <ion-label class="title">
+        Visite touristique
+      </ion-label>
+
+      <ion-icon slot="end" name="arrow-forward-outline" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="onShowDetail('Concert', 'photo-13.jpg')">
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/photo-13.jpg" alt="">
+      </ion-thumbnail>
+
+      <ion-label class="title">
+        Concert
+      </ion-label>
+
+      <ion-icon slot="end" name="arrow-forward-outline" color="warning"></ion-icon>
+    </ion-item>
+
+    <ion-item (click)="onShowDetail('Autres', 'photo-10.jpg')">
+      <ion-thumbnail slot="start">
+        <img src="../../../assets/photo-10.jpg" alt="">
+      </ion-thumbnail>
+
+      <ion-label class="title">
+        Autres
+      </ion-label>
+
+      <ion-icon slot="end" name="arrow-forward-outline" color="warning"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

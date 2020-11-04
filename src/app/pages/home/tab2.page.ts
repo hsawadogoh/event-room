@@ -4,6 +4,7 @@ import {SearchPage} from '../search/search.page';
 import {SettingsMenuPage} from '../settings-menu/settings-menu.page';
 import {LoadingService} from '../../services/loading.service';
 import {ToastService} from "../../services/toast.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-tab2',
@@ -16,7 +17,8 @@ export class Tab2Page implements OnInit{
       private modalCtrl: ModalController,
       private popoverCtrl: PopoverController,
       private loadingService: LoadingService,
-      private toastService: ToastService
+      private toastService: ToastService,
+      private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -36,4 +38,8 @@ export class Tab2Page implements OnInit{
     });
     return await modal.present();
   }
+
+    onShowCategories() {
+        this.router.navigate(['categories']);
+    }
 }

@@ -13,7 +13,15 @@ const routes: Routes = [
   {
     path: 'settings-menu',
     loadChildren: () => import('./pages/settings-menu/settings-menu.module').then( m => m.SettingsMenuPageModule)
+  },  {
+    path: 'categories',
+    loadChildren: () => import('./pages/categories/categories.module').then( m => m.CategoriesPageModule)
+  },
+  {
+    path: 'detail-categorie',
+    loadChildren: () => import('./pages/detail-categorie/detail-categorie.module').then( m => m.DetailCategoriePageModule)
   }
+
 ];
 @NgModule({
   imports: [
