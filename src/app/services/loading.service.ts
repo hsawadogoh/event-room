@@ -12,9 +12,9 @@ export class LoadingService {
   async present() {
     this.isLoading = true;
     return await this.loadingController.create({
-      spinner: 'lines',
+      spinner: 'bubbles',
       message: 'Patientez-vous svp...',
-      cssClass: 'danger'
+      cssClass: 'warning'
     }).then(a => {
       a.present().then(() => {
         if (!this.isLoading) {
