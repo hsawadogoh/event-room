@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'detail-categorie',
     loadChildren: () => import('./pages/detail-categorie/detail-categorie.module').then( m => m.DetailCategoriePageModule)
+  },
+  {
+    path: 'detail-annonce',
+    loadChildren: () => import('./pages/detail-annonce/detail-annonce.module').then( m => m.DetailAnnoncePageModule)
   }
 
 ];

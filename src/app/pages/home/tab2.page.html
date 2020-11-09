@@ -21,7 +21,7 @@
   </ion-item>
 
   <div class="scroll_freind">
-    <div class="music-box">
+    <div class="music-box" (click)="onShowAnnonce('Danse', 'photo-3.jpeg')">
       <ion-card class="card">
         <img src="../../../assets/photo-3.jpeg" alt="" class="img"/>
         <ion-card-header>
@@ -35,7 +35,7 @@
       </ion-card>
     </div>
 
-    <div class="music-box">
+    <div class="music-box" (click)="onShowAnnonce('Sortie de detente', 'photo-4.jpg')">
       <ion-card class="card">
         <img src="../../../assets/photo-4.jpg" alt="" class="img"/>
         <ion-card-header>
@@ -49,7 +49,7 @@
       </ion-card>
     </div>
 
-    <div class="music-box">
+    <div class="music-box" (click)="onShowAnnonce('Visite', 'photo-10.jpg')">
       <ion-card class="card">
         <img src="../../../assets/photo-10.jpg" alt="" class="img"/>
         <ion-card-header>
@@ -63,7 +63,7 @@
       </ion-card>
     </div>
 
-    <div class="music-box">
+    <div class="music-box" (click)="onShowAnnonce('Football', 'photo-11.png')">
       <ion-card class="card">
         <img src="../../../assets/photo-11.png" alt="" class="img"/>
         <ion-card-header>
@@ -77,7 +77,7 @@
       </ion-card>
     </div>
 
-    <div class="music-box">
+    <div class="music-box" (click)="onShowAnnonce('Music', 'photo-13.jpg')">
       <ion-card class="card">
         <img src="../../../assets/photo-13.jpg" alt="" class="img"/>
         <ion-card-header>
@@ -108,6 +108,18 @@
 
         <ion-card-content class="location">
           <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6" class="ion-text-center">
+                <ion-icon name="thumbs-up-outline" class="icon" size="large"></ion-icon>
+              </ion-col>
+
+              <ion-col size="6" class="ion-text-center">
+                <ion-icon name="heart-outline" color="danger" size="large"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-card-content>
       </ion-card>
     </div>

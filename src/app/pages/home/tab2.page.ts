@@ -22,6 +22,7 @@ export class Tab2Page implements OnInit{
   ) {}
 
   ngOnInit(): void {
+    console.log(this.router.url);
   }
 
   async openSettingMenu() {
@@ -39,7 +40,16 @@ export class Tab2Page implements OnInit{
     return await modal.present();
   }
 
-    onShowCategories() {
-        this.router.navigate(['categories']);
-    }
+  onShowCategories() {
+    this.router.navigate(['categories']);
+  }
+
+  onShowAnnonce(categorie: string, image: string) {
+    this.router.navigate(['detail-annonce'], {
+      queryParams: {
+        categorie,
+        image
+      }
+    });
+  }
 }

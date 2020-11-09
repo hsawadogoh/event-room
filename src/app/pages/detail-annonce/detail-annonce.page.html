@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+      <ion-title>{{ title }}</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="../../../assets/{{ image }}" alt="">
+
+    <ion-card-header>
+      {{ title }}
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4" class="ion-text-center">
+            <ion-icon name="thumbs-up-outline" size="large" color="primary"></ion-icon>
+          </ion-col>
+
+          <ion-col size="4" class="ion-text-center">
+            <ion-icon name="heart-outline" size="large" color="danger"></ion-icon>
+          </ion-col>
+
+          <ion-col size="4" class="ion-text-center">
+            <ion-icon name="share-social" size="large" color="warning"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-label color="primary">Autres évènements de la même catégorie...</ion-label>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="scroll_freind">
+        <div class="music-box" (click)="onShowAnnonce('Danse', 'photo-3.jpeg')">
+          <ion-card class="card">
+            <img src="../../../assets/photo-3.jpeg" alt="" class="img"/>
+            <ion-card-header>
+              <ion-card-subtitle class="date">11 decembre 2020</ion-card-subtitle>
+              <ion-card-title class="title">Fête d'independance</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content class="location">
+              <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <div class="music-box" (click)="onShowAnnonce('Sortie de detente', 'photo-4.jpg')">
+          <ion-card class="card">
+            <img src="../../../assets/photo-4.jpg" alt="" class="img"/>
+            <ion-card-header>
+              <ion-card-subtitle class="date">25 mai 2020</ion-card-subtitle>
+              <ion-card-title class="title">FESPACO</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content class="location">
+              <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <div class="music-box" (click)="onShowAnnonce('Visite', 'photo-10.jpg')">
+          <ion-card class="card">
+            <img src="../../../assets/photo-10.jpg" alt="" class="img"/>
+            <ion-card-header>
+              <ion-card-subtitle class="date">25 Avril 2020</ion-card-subtitle>
+              <ion-card-title class="title">SIAO</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content class="location">
+              <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <div class="music-box" (click)="onShowAnnonce('Football', 'photo-11.png')">
+          <ion-card class="card">
+            <img src="../../../assets/photo-11.png" alt="" class="img"/>
+            <ion-card-header>
+              <ion-card-subtitle class="date">1 juin 2020</ion-card-subtitle>
+              <ion-card-title class="title">Finiti Show</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content class="location">
+              <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Bobo
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <div class="music-box" (click)="onShowAnnonce('Music', 'photo-13.jpg')">
+          <ion-card class="card">
+            <img src="../../../assets/photo-13.jpg" alt="" class="img"/>
+            <ion-card-header>
+              <ion-card-subtitle class="date">12 Août 2020</ion-card-subtitle>
+              <ion-card-title class="title">Festival Garba</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content class="location">
+              <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-label color="primary">
+        <ion-icon name="ribbon"></ion-icon> Note et Appréciations
+      </ion-label>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-button color="warning">
+              Noter
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
