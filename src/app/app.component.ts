@@ -1,6 +1,6 @@
 import {Component, QueryList, ViewChildren} from '@angular/core';
 
-import {AlertController, IonRouterOutlet, Platform} from '@ionic/angular';
+import {AlertController, IonRouterOutlet, MenuController, Platform} from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import {Router} from '@angular/router';
@@ -19,7 +19,8 @@ export class AppComponent {
       private splashScreen: SplashScreen,
       private statusBar: StatusBar,
       private router: Router,
-      private alertCtrl: AlertController
+      private alertCtrl: AlertController,
+      private menuCtrl: MenuController
   ) {
     this.initializeApp();
     this.backButtonEvent();
@@ -29,6 +30,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.show();
       this.splashScreen.hide();
+      this.router.navigate(['tab2']);
     });
   }
 
@@ -73,5 +75,10 @@ export class AppComponent {
       ]
     });
     return await alert.present();
+  }
+
+  onNavigate(url: string) {
+    this.menuCtrl.toggle();
+    this.router.navigate([url]);
   }
 }

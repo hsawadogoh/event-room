@@ -12,7 +12,24 @@
     <img src="../../../assets/{{ image }}" alt="">
 
     <ion-card-header>
-      {{ title }}
+      <h1 class="warning">
+        {{ title }}
+      </h1>
+
+      <p class="violet">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperio
+        res beatae dicta ea illo labore provident quia sit
+        . Ad aliquid deserunt, dignissimos harum maxime nam nihil
+        odio perferendis sequi temporibus, ullam.
+      </p>
+
+      <p>
+        <ion-icon name="location" slot="start" class="icon"></ion-icon> Avenue Thomas, Ouaga
+      </p>
+
+      <p>
+        <ion-icon name="alarm" slot="start" class="icon"></ion-icon> {{ date | date: 'dd/MM/yyyy - HH:mm:ss' }}
+      </p>
     </ion-card-header>
 
     <ion-card-content>

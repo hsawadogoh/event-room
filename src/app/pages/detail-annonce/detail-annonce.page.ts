@@ -9,6 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 export class DetailAnnoncePage implements OnInit {
   title: string;
   image: string;
+  date = new Date();
   constructor(
       private activedRouter: ActivatedRoute,
   ) { }
@@ -18,7 +19,7 @@ export class DetailAnnoncePage implements OnInit {
     this.image = this.activedRouter.snapshot.queryParams.image;
   }
 
-    onShowAnnonce(danse: string, jpeg: string) {
-        
-    }
+  onShowAnnonce(danse: string, jpeg: string) {
+
+  }
 }

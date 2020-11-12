@@ -35,18 +35,23 @@
   color: #ffffff;
 }
 
+.warning {
+  color: #ff7f27;
+}
+
 .violet {
   color: #360840;
   font-weight: bold;
 }
 
 .img {
-  border-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .ion-content {
@@ -117,8 +122,8 @@
 .music-box {
   position: relative;
   margin-left: 5px;
-  width: 180px;
-  min-width:180px;
+  width: 220px;
+  min-width: 220px;
   height: 200px;
   border-radius: 10px;
 }

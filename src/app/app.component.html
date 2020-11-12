@@ -1,84 +1,84 @@
 <ion-app>
-  <ion-menu contentId="main-content" type="overlay">
-    <img src="../assets/event.png" alt="" class="img"/>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <img src="../assets/event.png" alt="" class="img"/>
+      <ion-content>
+        <ion-list>
+          <ion-item-divider color="warning">
+            <ion-label>Catégories</ion-label>
+          </ion-item-divider>
 
-    <ion-content fullscreen="true">
-      <ion-list>
-        <ion-item-divider color="warning">
-          <ion-label>Catégories</ion-label>
-        </ion-item-divider>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="body-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Danse</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="body-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Danse</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="american-football-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Sport</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="american-football-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Sport</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="musical-notes-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Music</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="musical-notes-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Music</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="desktop-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Cinema</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="desktop-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Cinema</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="walk-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Sortie de detente</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="walk-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Sortie de detente</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('categories')">
+            <ion-icon style="color: #4a1b60;" name="planet-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Voyage</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="planet-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Voyage</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item-divider color="warning">
+            <ion-label>Plus d'options</ion-label>
+          </ion-item-divider>
 
-        <ion-item-divider color="warning">
-          <ion-label>Plus d'options</ion-label>
-        </ion-item-divider>
+          <ion-item (click)="onNavigate('profil')">
+            <ion-icon style="color: #4a1b60;" name="person-circle" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Mon profil</h2>
+            </ion-label>
+          </ion-item>
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="person-circle" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Mon profil</h2>
-          </ion-label>
-        </ion-item>
-
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="heart-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Favoris</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('favoris')">
+            <ion-icon style="color: #4a1b60;" name="heart-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Favoris</h2>
+            </ion-label>
+          </ion-item>
 
 
-        <ion-item>
-          <ion-icon style="color: #4a1b60;" name="trail-sign-outline" slot="start" size="large"></ion-icon>
-          <ion-label>
-            <h2 style="color: #4a1b60; font-weight: bold;">Mes publications</h2>
-          </ion-label>
-        </ion-item>
+          <ion-item (click)="onNavigate('publications')">
+            <ion-icon style="color: #4a1b60;" name="trail-sign-outline" slot="start" size="large"></ion-icon>
+            <ion-label>
+              <h2 style="color: #4a1b60; font-weight: bold;">Mes publications</h2>
+            </ion-label>
+          </ion-item>
 
-      </ion-list>
-
-    </ion-content>
-  </ion-menu>
-  <ion-router-outlet id="main-content"></ion-router-outlet>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
 </ion-app>
